@@ -35,7 +35,7 @@ public class NPCMovement : MonoBehaviour
             walkCounter -= Time.deltaTime;
             
             
-
+            
             switch (WalkDirection)
             {
                 case 0:
@@ -52,6 +52,9 @@ public class NPCMovement : MonoBehaviour
 
                 case 3:
                     rb.velocity = new Vector2(-walkSpeed, 0);
+                    break;
+
+                default:
                     break;
             }
 
