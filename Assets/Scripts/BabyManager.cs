@@ -2,9 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BabyStats : MonoBehaviour
+public class BabyManager : MonoBehaviour
 {
+    // Start is called before the first frame update
+
+    public GameObject[] babies;
+
     private int intelligence, charisma, health;
+
+    private int life = 70;
 
     void Start()
     {
@@ -14,7 +20,15 @@ public class BabyStats : MonoBehaviour
 
 
         Debug.Log("Int " + intelligence + "\n"
-            +"Charisma " + charisma + "\n"
+            + "Charisma " + charisma + "\n"
             + "Health " + health);
+    }
+    private void Update()
+    {
+        
+    }
+    void RandomEvent()
+    {
+
     }
 }
