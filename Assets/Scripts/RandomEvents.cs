@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class RandomEvents : MonoBehaviour
 {
-    public GameObject gameObject;
+    public GameObject gO;
     // Start is called before the first frame update
     void Start()
     {
@@ -16,7 +16,7 @@ public class RandomEvents : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            gameObject.SetActive(true);
+            gO.SetActive(true);
         }
     }
 }
